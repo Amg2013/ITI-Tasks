@@ -1,0 +1,66 @@
+/* 1- Navbar 
+2- logo 
+3- Hero Section
+4- * media queries
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background: linear-gradient(to bottom, #000, lch(19.72% 95.07 306.49));
+    min-height: 100vh;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-evenly;  
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover{
+    color: #ff6347;
+}
+.navbar-cv a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 16px;
+    
+    border-radius: 4px;
+    transition:
+     background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 20px;
+}

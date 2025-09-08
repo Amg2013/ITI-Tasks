@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin: 0; height: 150vh; }
+
+  /* Position Types */
+  .box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+
+  }
+
+  /* Static (default) */
+
+  .static {
+    position: static;
+    background: red;
+    margin-top: 500;
+    margin-left: 20px;
+    /* border-radius: 1000cap; */
+  }
+
+  /* Relative */
+  .relative {
+    position: relative;
+    background: blue;
+    top: 20px;
+    left: 30px;
+  }
+
+  /* Absolute */
+  .absolute {
+    position: absolute;
+    background: green;
+    top: 50px;
+    right: 50px;
+  }
+
+  /* Fixed */
+  .fixed {
+    position: fixed;
+    background: purple;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* Sticky */
+  .sticky {
+    position: sticky;
+    background: orange;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* Centering technique */
+  .center-container {
+    position: relative;
+    height: 200px;
+    border: 2px dashed black;
+    margin-top: 20px;
+  }
+  
+  .centered {
+    position: absolute;
+    background: teal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Z-index example */
+  .stacking {
+    position: relative;
+    height: 100px;
+    margin-top: 50px;
+  }
+  
+  .layer1, .layer2, .layer3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .layer1 {
+    background: rgba(255,0,0,0.7);
+    z-index: 3;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .layer2 {
+    background: rgba(0,255,0,0.7);
+    z-index: 2;
+    top: 40px;
+    left: 40px;
+  }
+  
+  .layer3 {
+    background: rgba(0,0,255,0.7);
+    z-index: 1;
+    top: 60px;
+    left: 60px;
+  }
+</style>
+</head>
+<body>
+  <!-- Basic positioning -->
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box absolute">Absolute</div>
+  <div class="box fixed">Fixed</div>
+  
+  <!-- Scroll to see sticky behavior  -->
+  <div style="height: 500px; margin-top: 50px;">
+    <div class="box sticky">Sticky</div>
+    Scroll down to see sticky behavior...
+  </div>
+  
+  <!-- Centering technique -->
+  <div class="center-container">
+    <div class="box centered">Centered</div>
+  </div>
+  
+  <!-- Z-index stacking -->
+  <div class="stacking">
+    <div class="layer1">Layer 1 (z-index: 3)</div>
+    <div class="layer2">Layer 2 (z-index: 2)</div>
+    <div class="layer3">Layer 3 (z-index: 1)</div>
+  </div>
+</body>
+</html>

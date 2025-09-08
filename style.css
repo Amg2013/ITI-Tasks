@@ -1,0 +1,14 @@
+ body { background-color: rgb(113, 206, 237); }
+ h1 { color: rgb(31, 31, 25); margin-left:50px; }
+ h2 { color: rgb(246, 195, 78);
+   font-family: 'Times New Roman', Times, serif; 
+   font-size:50px; border: 100px; }
+
+   img { border-radius: 50%; }
+
+
+   .dddddd {
+     color: rgb(255, 255, 255);
+     margin-left:50px;
+     font-size: 50px;
+   }

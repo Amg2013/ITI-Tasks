@@ -1,0 +1,25 @@
+/* Element selector */
+p {
+  color: rgb(231, 81, 12);
+}
+
+/* Class selector */
+.highlight {
+  background-color: #ffff99;
+  padding: 4px;
+}
+
+.hero {
+  color: red;
+  font-weight: bold;
+}
+
+/* #mmm {
+    color:blueviolet;
+    font-size: x-large;
+} */
+/* ID selector */
+#unique, #unique-text {
+  color: green;
+  font-style: italic;
+}
